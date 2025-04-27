@@ -1,0 +1,10 @@
+Algoritmo
+Compilador
+Servidor
+Repositorio
+Variable
+Framework
+Script
+Encriptación
+Virtualización
+API
