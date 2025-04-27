@@ -1,6 +1,7 @@
 """
 License: Apache
 Organization: UNIR
+practica: 1
 """
 
 import os
@@ -9,7 +10,19 @@ import sys
 DEFAULT_FILENAME = "words.txt"
 DEFAULT_DUPLICATES = False
 
+"""
+Ordena una lista de elementos.
 
+Args:
+    items (list): Lista de elementos a ordenar.
+    ascending (bool): Si es True, ordena de manera ascendente; si es False, descendente.
+
+Returns:
+    list: Lista ordenada.
+    
+Raises:
+    RuntimeError: Si el parámetro 'items' no es una lista.
+"""
 def sort_list(items, ascending=True):
     if not isinstance(items, list):
         raise RuntimeError(f"No puede ordenar {type(items)}")
@@ -17,6 +30,15 @@ def sort_list(items, ascending=True):
     return sorted(items, reverse=(not ascending))
 
 
+"""
+Elimina elementos duplicados de una lista.
+
+Args:
+    items (list): Lista de elementos, posiblemente con duplicados.
+
+Returns:
+    List: Lista sin elementos duplicados.
+"""
 def remove_duplicates_from_list(items):
     return list(set(items))
 
